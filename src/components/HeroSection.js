@@ -1,0 +1,35 @@
+import React from 'react'
+
+function HeroSection() {
+    return (
+        <div className='w-full h-96 flex bg-gradient-to-b from-cyan-500 to-blue-500 relative'>
+
+            <div className='m-auto w-10/12 h-2/3 p-4 bg-white/25 backdrop-blur-sm shadow-xl shadow-[#1f2687]/25 rounded-xl border-2 border-white/25 z-10
+            
+           
+
+
+            
+            ' >
+                <h1 className='text-white text-4xl'>
+                    Fede Ferrelli
+                </h1>
+
+                <p className='text-white'>
+                    Web Developer
+                </p>
+
+                <div className='w-20 h-20 rounded-full bg-gradient-to-b from-cyan-500 to-blue-500 border border-white/25 shadow shadow-gray-500 absolute -bottom-10 right-4 -z-0'></div>
+
+            </div>
+
+            <div className='w-40 h-40 rounded-full bg-gradient-to-b from-violet-500 to-fuchsia-500 border border-white/25 absolute top-1 right-2 -z-0 shadow-inner-xl shadow-gray-500' ></div>
+
+            <div className='w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 border border-white/25 absolute bottom-10 left-10 shadow-xl shadow-[#1f2687]/25' ></div>
+
+            
+        </div>
+    )
+}
+
+export default HeroSection;
