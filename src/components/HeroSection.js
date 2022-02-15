@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
     return (
-        <div className='w-full h-96 flex bg-gradient-to-b from-cyan-500 to-blue-500 relative'>
+        <div className='w-full h-96 flex bg-gradient-to-b bg-violet-800 relative'>
 
             <div className='m-auto w-10/12 h-2/3 p-4 bg-white/25 backdrop-blur-sm shadow-xl shadow-[#1f2687]/25 rounded-xl border-2 border-white/25 z-10
             
