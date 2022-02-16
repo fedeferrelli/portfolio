@@ -19,9 +19,12 @@ function HeroSection() {
                     Web Developer
                 </p>
 
-                <div className='w-20 h-20 rounded-full bg-gradient-to-b from-violet-500 to-fuchsia-500 border border-white/25 shadow shadow-gray-500 absolute -bottom-10 right-4 -z-0'></div>
-                <div className='w-8 h-8 rounded-full bg-gradient-to-b from-violet-500 to-fuchsia-500 border border-white/25 absolute top-40 right-24 -z-0 shadow-inner-xl shadow-gray-500' ></div>
+
             </div>
+
+            <div className='w-20 h-20 rounded-full bg-gradient-to-b from-violet-500 to-fuchsia-500 border border-white/25 shadow shadow-gray-500 absolute bottom-4 right-4 -z-0'></div>
+            
+            <div className='w-8 h-8 rounded-full bg-gradient-to-b from-violet-500 to-fuchsia-500 border border-white/25 absolute bottom-2 right-32 -z-0 shadow-inner-xl shadow-gray-500' ></div>
 
             <div className='w-40 h-40 rounded-full bg-gradient-to-b from-violet-500 to-fuchsia-500 border border-white/25 absolute top-1 right-2 -z-0 shadow-inner-xl shadow-gray-500' ></div>
 
