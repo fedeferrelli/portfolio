@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../assets/animacion.gif';
-import {BiCodeAlt, BiGridAlt, BiX} from 'react-icons/bi'
+import {BiCodeAlt, BiGridAlt/* , BiX */} from 'react-icons/bi'
 
 function HeroSection() {
     return (
