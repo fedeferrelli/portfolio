@@ -32,12 +32,12 @@ function HeroSection() {
         </div>
 
         <div className="text-white text-center m-auto  sm:w-1/2">
-          <h1 className="text-4xl font-bold">Fede Ferrelli</h1>
-          <h2 className="text-lg uppercase ">Front end developer</h2>
-          <button className="bg-pink-600 px-6 py-3 uppercase rounded-lg mt-4 text-white hover:bg-violet-600 font-sans hover:text-violet-400">
+          <h1 className="text-5xl font-bold">Fede Ferrelli</h1>
+          <h2 className="text-xl uppercase ">Front end developer</h2>
+          <button className="bg-pink-600 px-6 py-3 uppercase rounded-lg mt-8 text-white hover:bg-violet-600 font-sans hover:text-violet-400">
             Contactame
           </button>
-          <BiCodeAlt className='m-auto text-center text-4xl mt-2'/>
+          <BiCodeAlt className='m-auto text-center text-4xl mt-4'/>
         </div>
       </div>
     );
