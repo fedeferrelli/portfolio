@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/Navbar/NavBar";
+import About from "./components/About";
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
     
     <HeroSection 
     setShowNavBar={setShowNavBar}/>
+
+    <About/>
 
     </>
   );
