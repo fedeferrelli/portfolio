@@ -2,14 +2,16 @@ import React from 'react';
 import image from '../assets/animacion.gif';
 import {BiCodeAlt, BiGridAlt/* , BiX */} from 'react-icons/bi'
 
-function HeroSection() {
-    return (
-      <div className="w-full h-screen  flex flex-col justify-between items-center  bg-gradient-to-br from-indigo-900 via-purple-800 to-violet-900  sm:flex-row  sm:h-2/3">
+function HeroSection({showNavBar, setShowNavBar}) {
 
-      <div className='text-white w-full flex flex-row justify-end text-4xl p-2'> 
+
+    return (
+      <div className="w-full h-screen  flex flex-col justify-between items-center  bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800  sm:flex-row  sm:h-2/3">
+
+      <div className=' w-full flex flex-row justify-end  p-2'> 
       
-      <div><BiGridAlt
-      onClick={(e)=>{console.log('click')}}/></div>    
+      <BiGridAlt className='text-white text-4xl'
+      onClick={(e)=>{setShowNavBar(true)}}/>    
       </div>    
 
 
