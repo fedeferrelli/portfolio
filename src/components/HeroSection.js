@@ -1,8 +1,8 @@
 import React from 'react';
 import image from '../assets/animacion.gif';
-import {BiCodeAlt, BiGridAlt/* , BiX */} from 'react-icons/bi'
+import {BiCodeAlt, BiGridAlt} from 'react-icons/bi'
 
-function HeroSection({showNavBar, setShowNavBar}) {
+function HeroSection({setShowNavBar}) {
 
 
     return (
