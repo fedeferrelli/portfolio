@@ -1,22 +1,20 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/Navbar/NavBar";
 import About from "./components/About";
+import Stack from "./components/Stack";
 
 function App() {
-
-  const [showNavBar, setShowNavBar] = useState(false)
+  const [showNavBar, setShowNavBar] = useState(false);
 
   return (
     <>
-    {showNavBar && <NavBar
-                    setShowNavBar={setShowNavBar}/>}
-    
-    <HeroSection 
-    setShowNavBar={setShowNavBar}/>
+      {showNavBar && <NavBar setShowNavBar={setShowNavBar} />}
 
-    <About/>
+      <HeroSection setShowNavBar={setShowNavBar} />
 
+      <About />
+      <Stack />
     </>
   );
 }
