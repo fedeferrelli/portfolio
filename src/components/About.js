@@ -11,18 +11,17 @@ function About() {
         </span>
       </div>
       <p className="w-10/12 m-auto mt-4 font-mono leading-loose">
-        Apasionado por el diseño Fron End, disfruto de resolver problemas con
+        Apasionado por el desarrollo Front End, disfruto de resolver problemas con {" "}
         <span className="bg-gradient-to-r from-violet-900/50 via-purple-800/50 to-pink-500/50  font-bold">
-          {" "}
-          soluciones creativas y robustas
+          {" "}soluciones creativas y robustas
         </span>
         .
       </p>
       <p className="w-10/12 m-auto mt-4 font-mono leading-loose">
-        Estoy siempre en búsqueda de oportunidades que me permitan seguir{" "}
+        Estoy siempre en búsqueda de oportunidades que me permitan {" "}
         <strong className=" bg-gradient-to-r from-violet-900/50 via-purple-800/50 to-pink-500/50 font-display font-bold ">
           {" "}
-          aprendiendo, enseñando y disfrutando
+          seguir aprendiendo, enseñando y disfrutando
         </strong>
         .
       </p>

@@ -5,13 +5,19 @@ import DisplayStacks from "./DisplayStacks";
 function Stack() {
   return (
     <>
-      <div className=" h-4 bg-gradient-to-b from-white to-purple-800"></div>
-      <div className="bg-purple-800 pb-8 overflow-hidden">
-        <div className="text-5xl font-extrabold text-center mt-8">
-          <h1 className="text-white">Mi Stack</h1>
-        </div>
+      {/* <div className=" h-4 bg-gradient-to-b from-white to-purple-800"></div> */}
+      <div className="bg-white pb-8 mt-12 ">
+        {/* <div className="text-5xl font-extrabold text-center mt-8">
+          <h1 className="text-purple-800">Mi Stack</h1>
+        </div> */}
 
-        <div className="flex flex-wrap justify-center my-3">
+        <div className="text-5xl font-extrabold text-center">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-900 via-purple-800 to-pink-500">
+          mi Stack
+        </span>
+      </div>
+
+        <div className="flex flex-wrap justify-center my-4">
           {stack.map((stack) => (
             <DisplayStacks
               key={Math.random()
@@ -23,7 +29,7 @@ function Stack() {
           ))}
         </div>
 
-        <h2 className="text-white text-center mt-4">Coming soon ...</h2>
+        <h2 className="text-purple-800 text-center mt-4">Coming soon ...</h2>
         <div className="flex flex-wrap justify-center my-3">
           {stack_to_come.map((stack) => (
             <DisplayStacks
@@ -36,7 +42,7 @@ function Stack() {
           ))}
         </div>
       </div>
-      <div className=" h-4 bg-gradient-to-b from-purple-800"></div>
+      {/* <div className=" h-4 bg-gradient-to-b from-purple-800"></div> */}
     </>
   );
 }
