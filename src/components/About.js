@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-white mt-0 overflow-hidden mb-8">
+    <div className="bg-gray-100 mt-0 overflow-hidden mb-8">
       <div className=" h-4 bg-gradient-to-b from-purple-800 mb-8"></div>
 
       <div className="text-5xl font-extrabold text-center">
