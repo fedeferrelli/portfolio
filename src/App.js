@@ -3,6 +3,8 @@ import HeroSection from "./components/HeroSection";
 import NavBar from "./components/Navbar/NavBar";
 import About from "./components/About";
 import Stack from "./components/Stack";
+import Projects from "./components/Projects";
+
 
 function App() {
   const [showNavBar, setShowNavBar] = useState(false);
@@ -15,6 +17,7 @@ function App() {
 
       <About />
       <Stack />
+      <Projects/>
     </>
   );
 }
