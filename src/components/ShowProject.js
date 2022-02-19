@@ -2,7 +2,7 @@ import React from "react";
 
 function ShowProject({ project }) {
   const { name, description, link, apk, code, image } = project;
-  const Image = '../assets/js.svg'
+ 
   return (
     <div className="flex flex-col justify-center m-auto w-full my-3 ">
 
