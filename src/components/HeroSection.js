@@ -19,16 +19,16 @@ function HeroSection({ setShowNavBar }) {
         <img
           src={image}
           alt="hero-section"
-          className="  h-[350px] z-20 m-auto sm:h-2/3"
+          className="  h-[350px] z-20 m-auto sm:h-2/3 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] "
         />
 
         <div
-          className="w-40 h-40 rounded-full bg-gradient-to-b from-violet-500 to-fuchsia-500 border border-white/25  shadow-md shadow-gray-600
+          className="w-40 h-40 rounded-full bg-gradient-to-b from-purple-500/75 to-pink-500/75 border border-pink-400/25 shadow-md shadow-gray-500/50
           absolute top-1 right-2"
         ></div>
 
         <div
-          className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500/75 to-pink-500 border border-white/25 shadow-md shadow-gray-600
+          className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500/75 to-pink-500/75 border border-pink-400/25 shadow-md shadow-gray-500/50
           absolute top-56 left-10"
         ></div>
 

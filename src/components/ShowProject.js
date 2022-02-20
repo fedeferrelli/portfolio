@@ -29,9 +29,9 @@ function ShowProject({ project }) {
 
       <div className='w-full flex flex-row justify-evenly items-center py-4 '>
 
-        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white sm:hover:bg-violet-600 font-sans hover:text-violet-400"><a href={link ? link : apk}>{link ? 'site' : 'apk'}</a></button>
+        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white sm:hover:bg-violet-600 font-sans sm:hover:text-violet-400"><a href={link ? link : apk}>{link ? 'site' : 'apk'}</a></button>
 
-        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white sm:hover:bg-violet-600 font-sans hover:text-violet-400"><a href={code}>Code</a></button>
+        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white sm:hover:bg-violet-600 font-sans sm:hover:text-violet-400"><a href={code}>Code</a></button>
 
       </div>
       
