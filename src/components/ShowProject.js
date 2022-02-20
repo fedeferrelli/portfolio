@@ -6,9 +6,9 @@ function ShowProject({ project }) {
   return (
     <div className="flex flex-col justify-center m-auto w-full my-3 ">
 
-      <div className="w-10/12 m-auto bg-white rounded-sm border border-gray-400 shadow-sm shadow-gray-400">
+      <div className="w-10/12 m-auto bg-white rounded-lg border border-gray-400 shadow-sm shadow-gray-400  overflow-hidden">
         
-        <div className="w-full h-16 bg-contain bg-center center overflow-hidden">
+        <div className="w-full h-16 bg-contain bg-center center overflow-hidden border-b border-gray-400">
           <img
             src={require(`../assets/${image}.jpg`)}
             alt={image}
@@ -16,9 +16,9 @@ function ShowProject({ project }) {
           />
         </div>
       
-      <h1 className='text-center text-lg my-3'>
+      <h1 className='text-center text-xl my-3'>
       <span className="bg-gradient-to-r from-violet-900/50 via-purple-800/50 to-pink-500/50  font-bold">
-      {name}
+       {"  "}{ name } 
         </span>
          
       </h1>
@@ -29,7 +29,7 @@ function ShowProject({ project }) {
 
       <div className='w-full flex flex-row justify-evenly items-center py-4 '>
 
-        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white hover:bg-violet-600 font-sans hover:text-violet-400"><a href={link ? link : apk}>Site</a></button>
+        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white hover:bg-violet-600 font-sans hover:text-violet-400"><a href={link ? link : apk}>{link ? 'site' : 'apk'}</a></button>
 
         <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white hover:bg-violet-600 font-sans hover:text-violet-400"><a href={code}>Code</a></button>
 

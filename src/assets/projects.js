@@ -12,6 +12,12 @@ apk: "https://drive.google.com/file/d/1csGNH7VmeqfSFS1PhrPFgGi36tFt7Z3E/view?usp
 code: "https://github.com/fedeferrelli/criptocotizador",
 image:'criptoCotizador'},
 
+{name:"WheaterApp",
+    description: "Con esta aplicación se pueden agregar varias ciudades, ubicarlas en el mapa y consultar el clima tanto actual como la previsión de la semana.",
+apk: "https://drive.google.com/file/d/1kLk5deQQww7zwBtHpSSgT_rxnWQ0OX3R/view",
+code: "https://github.com/fedeferrelli/weatherapp",
+image:'weatherApp'},
+
 ]
 
 export default projects;
