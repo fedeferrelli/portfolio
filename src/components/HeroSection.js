@@ -1,6 +1,6 @@
 
 import React from "react";
-import image from "../assets/animacion.gif";
+import image from "../assets/ani5.gif";
 import { BiCodeAlt, BiGridAlt } from "react-icons/bi";
 
 function HeroSection({ setShowNavBar }) {
@@ -19,7 +19,7 @@ function HeroSection({ setShowNavBar }) {
         <img
           src={image}
           alt="hero-section"
-          className="  h-[280px] z-20 m-auto sm:h-2/3"
+          className="  h-[350px] z-20 m-auto sm:h-2/3"
         />
 
         <div
@@ -28,8 +28,13 @@ function HeroSection({ setShowNavBar }) {
         ></div>
 
         <div
-          className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 border border-white/25 shadow-md shadow-gray-600
+          className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500/75 to-pink-500 border border-white/25 shadow-md shadow-gray-600
           absolute top-56 left-10"
+        ></div>
+
+<div
+          className="w-20 h-20 rounded-full bg-gradient-to-r from-purple-500/75 to-pink-500/75 border border-pink-400/25 shadow-md shadow-gray-500/50
+          absolute top-16 left-16"
         ></div>
       </div>
 
