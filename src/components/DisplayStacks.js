@@ -3,8 +3,8 @@ import React from "react";
 function DisplayStacks({ stack }) {
   return (
     <div
-      className="py-2 px-3 bg-purple-800/75 text-sm shadow-md shadow-gray-800
-        rounded-full border-2 border-white/25 m-1.5 text-white "
+      className="py-1 px-3 bg-transparent text-sm shadow-md shadow-gray-400
+        rounded-full border border-purple-800/25 m-1.5 text-purple-800 "
     >
       {stack}
     </div>

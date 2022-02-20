@@ -10,7 +10,7 @@ function Projects() {
             Proyectos
           </span>
         </div>
-
+<div className='sm:flex sm:w-3/4 m-auto sm:flex-row'>
         {projects.map((project, index) => (
           <ShowProject
             key={Math.random()
@@ -21,6 +21,8 @@ function Projects() {
             index={index}
           />
         ))}
+
+</div>
       </div>
     );
 }

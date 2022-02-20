@@ -5,11 +5,9 @@ import DisplayStacks from "./DisplayStacks";
 function Stack() {
   return (
     <>
-      {/* <div className=" h-4 bg-gradient-to-b from-white to-purple-800"></div> */}
-      <div className="bg-gray-100 pb-8 pt-12 ">
-        {/* <div className="text-5xl font-extrabold text-center mt-8">
-          <h1 className="text-purple-800">Mi Stack</h1>
-        </div> */}
+      
+      <div className="bg-gray-100 pb-8 pt-12 w-fullsm:w-3/4">
+        
 
         <div className="text-5xl font-extrabold text-center">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-900 via-purple-800 to-pink-500">
