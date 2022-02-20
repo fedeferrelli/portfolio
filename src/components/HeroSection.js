@@ -43,7 +43,7 @@ function HeroSection({ setShowNavBar }) {
       </div>
     </div>
   );
->>>>>>> prueba
+
 }
 
 export default HeroSection;
