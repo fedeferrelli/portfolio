@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function About() {
   return (
     <div className="bg-gray-100 mt-0 overflow-hidden pb-8">
@@ -18,10 +19,10 @@ function About() {
       </p>
       <p className="w-10/12 m-auto mt-4 font-mono leading-loose">
         Estoy siempre en búsqueda de oportunidades que me permitan {" "}
-        <strong className=" bg-gradient-to-r from-violet-900/50 via-purple-800/50 to-pink-500/50 font-display font-bold ">
+        <span className=" bg-gradient-to-r from-violet-900/50 via-purple-800/50 to-pink-500/50 font-display font-bold ">
           {" "}
           seguir aprendiendo, enseñando y disfrutando
-        </strong>
+        </span>
         .
       </p>
     </div>

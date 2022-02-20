@@ -3,6 +3,7 @@ import React from "react";
 import image from "../assets/ani5.gif";
 import { BiCodeAlt, BiGridAlt } from "react-icons/bi";
 
+
 function HeroSection({ setShowNavBar }) {
   return (
     <div className="w-full h-screen  flex flex-col justify-between items-center  bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800  sm:flex-row  sm:h-2/3">
@@ -16,11 +17,13 @@ function HeroSection({ setShowNavBar }) {
       </div>
 
       <div className="flex flex-row h-80 w-full m-auto  relative  sm:w-1/2 ">
+       
         <img
           src={image}
           alt="hero-section"
           className="  h-[350px] z-20 m-auto sm:h-2/3 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] "
         />
+       
 
         <div
           className="w-40 h-40 rounded-full bg-gradient-to-b from-purple-500/75 to-pink-500/75 border border-pink-400/25 shadow-md shadow-gray-500/50

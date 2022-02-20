@@ -11,13 +11,14 @@ function Projects() {
           </span>
         </div>
 
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <ShowProject
             key={Math.random()
               .toString(36)
               .replace(/[^a-z]+/g, "")
               .substr(0, 5)}
             project={project}
+            index={index}
           />
         ))}
       </div>

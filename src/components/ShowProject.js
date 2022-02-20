@@ -1,10 +1,12 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
-function ShowProject({ project }) {
+function ShowProject({ project, index }) {
   const { name, description, link, apk, code, image } = project;
- 
+ const reindex = index+1
+ console.log(reindex)
   return (
-    <div className="flex flex-col justify-center m-auto w-full my-10 ">
+    <Fade direction={reindex%2===0 ? 'right' : 'left'} triggerOnce  className="flex flex-col justify-center m-auto w-full my-10 ">
 
       <div className="w-10/12 m-auto bg-white rounded-lg border border-gray-400 shadow-sm shadow-gray-400  overflow-hidden">
         
@@ -41,7 +43,7 @@ function ShowProject({ project }) {
       
       
       </div>
-    </div>
+    </Fade>
   );
 }
 
