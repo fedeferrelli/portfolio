@@ -9,7 +9,7 @@ function HeroSection({ setShowNavBar }) {
   return (
     <div
       className="w-full h-screen  flex flex-col justify-between items-center    
-    sm:flex-col bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 "
+    bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:flex-col sm:max-h-[600px] "
     >
       <div className=" w-full flex flex-row justify-end  p-2 sm:hidden">
         <img src={Logo} alt="logo" className="w-10"/>

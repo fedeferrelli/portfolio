@@ -19,13 +19,16 @@ function Contact() {
               <BsLinkedin className="text-pink-500/75 text-4xl" />
             </a>
 
-          <a href="mailto:ferrelli.mazza@gmail.com" rel="noreferrer" target="_blank">
-              <MdEmail className="text-pink-500/75 text-4xl" />
-            </a>
+
             
             <a href="https://twitter.com/Fe__Dev__"  rel="noreferrer" target="_blank">
               <BsTwitter className="text-pink-500/75 text-4xl" />
             </a>
+
+            <a href="mailto:ferrelli.mazza@gmail.com" rel="noreferrer" target="_blank">
+              <MdEmail className="text-pink-500/75 text-4xl" />
+            </a>
+            
 
             <a href=" https://github.com/fedeferrelli" rel="noreferrer" target="_blank">
               <BsGithub className="text-pink-500/75 text-4xl" />
