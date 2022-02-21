@@ -5,6 +5,7 @@ import NavBarLaptop from "./components/Navbar/NavBarLaptop";
 import About from "./components/About";
 import Stack from "./components/Stack";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
       </div>
 
       <Projects />
+
+      <Contact/>
     </>
   );
 }

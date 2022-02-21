@@ -8,7 +8,7 @@ function HeroSection({ setShowNavBar }) {
   return (
     <div
       className="w-full h-screen  flex flex-col justify-between items-center    
-    sm:flex-col bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:h-96"
+    sm:flex-col bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 "
     >
       <div className=" w-full flex flex-row justify-end  p-2 sm:hidden">
         <BiGridAlt

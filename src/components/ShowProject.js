@@ -6,15 +6,16 @@ function ShowProject({ project, index }) {
  const reindex = index+1
 
   return (
-    <Fade direction={reindex%2===0 ? 'right' : 'left'} triggerOnce  className="flex flex-col justify-center m-auto w-full my-10 sm:w-1/2 ">
+    <div className="sm:w-1/2">
+    <Fade direction={reindex%2===0 ? 'right' : 'left'} triggerOnce className="flex flex-col justify-center m-auto py-10 ">
 
-      <div className="w-10/12 m-auto bg-white rounded-lg border border-gray-400 shadow-sm shadow-gray-400  overflow-hidden">
+      <div className="w-10/12 m-auto bg-white rounded-lg border border-purple-800/50 drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]  overflow-hidden sm:max-w-[375px] sm:hover:-translate-y-1 duration-300">
         
         <div className="w-full h-32 bg-contain bg-center center overflow-hidden border-b border-gray-400">
           <img
             src={require(`../assets/${image}.jpg`)}
             alt={image}
-            className="w-full"
+            className="w-full sm:hover:scale-110 sm:hover:opacity-80 ease-in-out duration-700"
           />
         </div>
       
@@ -25,15 +26,17 @@ function ShowProject({ project, index }) {
          
       </h1>
 
-      <p className=' px-4 py-2 '>
+      <p className=' px-4 py-2 font-mono sm:px-8'>
           {description}
       </p>
 
       <div className='w-full flex flex-row justify-evenly items-center py-4 '>
 
-        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white sm:hover:bg-violet-600 font-sans sm:hover:text-violet-400"><a href={link ? link : apk}>{link ? 'site' : 'apk'}</a></button>
+        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg text-white font-sans
+         sm:hover:bg-pink-700  ease-in-out duration-300"><a href={link ? link : apk}>{link ? 'site' : 'apk'}</a></button>
 
-        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white sm:hover:bg-violet-600 font-sans sm:hover:text-violet-400"><a href={code}>Code</a></button>
+        <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white font-sans
+         sm:hover:bg-pink-700  ease-in-out duration-300"><a href={code}>Code</a></button>
 
       </div>
       
@@ -44,6 +47,7 @@ function ShowProject({ project, index }) {
       
       </div>
     </Fade>
+    </div>
   );
 }
 

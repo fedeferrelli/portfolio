@@ -18,6 +18,12 @@ apk: "https://drive.google.com/file/d/1kLk5deQQww7zwBtHpSSgT_rxnWQ0OX3R/view",
 code: "https://github.com/fedeferrelli/weatherapp",
 image:'weatherApp'},
 
+{name:"miJardín",
+    description: "Página diseñada para un emprendimiento familiar relacionado con la jardinería. Se pueden ver los servicios y distintas formas de contacto",
+link: "https://mi-jardin.netlify.app/",
+code: "https://github.com/fedeferrelli/miJardin",
+image:'miJardin'},
+
 ]
 
 export default projects;
