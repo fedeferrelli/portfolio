@@ -2,6 +2,7 @@
 import React from "react";
 import image from "../assets/ani5.gif";
 import { BiCodeAlt, BiGridAlt } from "react-icons/bi";
+import Logo from "../assets/logo.png"
 
 
 function HeroSection({ setShowNavBar }) {
@@ -11,6 +12,7 @@ function HeroSection({ setShowNavBar }) {
     sm:flex-col bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 "
     >
       <div className=" w-full flex flex-row justify-end  p-2 sm:hidden">
+        <img src={Logo} alt="logo" className="w-10"/>
         <BiGridAlt
           className="text-white text-4xl"
           onClick={(e) => {

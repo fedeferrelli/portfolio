@@ -7,7 +7,7 @@ function ShowProject({ project, index }) {
 
   return (
     <div className="sm:w-1/2">
-    <Fade direction={reindex%2===0 ? 'right' : 'left'} triggerOnce className="flex flex-col justify-center m-auto py-10 ">
+    <Fade direction={reindex%2===0 ? 'right' : 'left'} triggerOnce className="flex flex-col justify-center m-auto py-6 sm:py-10 ">
 
       <div className="w-10/12 m-auto bg-white rounded-lg border border-purple-800/50 drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]  overflow-hidden sm:max-w-[375px] sm:hover:-translate-y-1 duration-300">
         
