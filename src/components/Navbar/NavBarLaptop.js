@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Fade } from "react-awesome-reveal";
-
 function NavBarLaptop({ setShowNavBar }) {
   return (
    
