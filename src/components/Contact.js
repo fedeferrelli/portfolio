@@ -1,6 +1,8 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 
+import ContactForm from './ContactForm';
+
 import {BsLinkedin, BsTwitter, BsGithub} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md';
 
@@ -36,6 +38,7 @@ function Contact() {
 
           </div>
         </Fade>
+        <ContactForm/>
       </div>
     );
 }
