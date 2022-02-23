@@ -4,7 +4,7 @@ import ShowProject from './ShowProject';
 
 function Projects() {
     return (
-      <div className="bg-gray-100 pt-10">
+      <div id="projects" className="bg-gray-100 pt-10">
         <div className="text-5xl font-extrabold text-center mb-8 ">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-900 via-purple-800 to-pink-500">
             Proyectos

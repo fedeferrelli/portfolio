@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 
+
+
 function App() {
   const [showNavBar, setShowNavBar] = useState(false);
 
@@ -15,23 +17,27 @@ function App() {
     <>
       {showNavBar && <NavBar setShowNavBar={setShowNavBar} />}
 
-      <NavBarLaptop />
+      {<NavBarLaptop  setShowNavBar={setShowNavBar} />}
 
-      <HeroSection setShowNavBar={setShowNavBar} />
+            <HeroSection />
+   
 
-      <div className="bg-gray-100 hidden w-full sm:flex flex-row">
-        <About className="w-full sm:w-1/2"/>
-        <Stack className="w-full sm:w-1/2"/>
-      </div>
+         <div className="bg-gray-100 w-full sm:flex sm:flex-row">
+   
+              <About className=" sm:w-1/2" />
+      
 
-      <div className="bg-gray-100 sm:hidden">
-        <About/>
-        <Stack/>
-      </div>
+              <Stack className="sm:w-1/2" />
+    
+       </div>
 
-      <Projects />
+        
+            <Projects />
+        
 
-      <Contact/>
+       
+            <Contact />
+   
     </>
   );
 }

@@ -6,7 +6,7 @@ function Stack() {
   return (
     <>
       
-      <div className="bg-gray-100 pb-8 pt-12 w-fullsm:w-3/4">
+      <div id="stack" className="bg-gray-100 pb-8 pt-12 w-full  sm:w-3/4">
         
 
         <div className="text-5xl font-extrabold text-center">
@@ -15,7 +15,7 @@ function Stack() {
         </span>
       </div>
 
-        <div className="flex flex-wrap justify-center my-4">
+        <div className="flex flex-wrap justify-center m-auto my-4 sm:w-2/3">
           {stack.map((stack) => (
             <DisplayStacks
               key={Math.random()

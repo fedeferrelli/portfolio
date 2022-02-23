@@ -11,16 +11,6 @@ function HeroSection({ setShowNavBar }) {
       className="w-full h-screen  flex flex-col justify-between items-center    
     bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:flex-col sm:max-h-[600px] "
     >
-      <div className=" w-full flex flex-row justify-end  p-2 sm:hidden">
-        <img src={Logo} alt="logo" className="w-10"/>
-        <BiGridAlt
-          className="text-white text-4xl"
-          onClick={(e) => {
-            setShowNavBar(true);
-          }}
-        />
-      </div>
-
       <div className="h-full flex flex-col justify-around  w-full  sm:flex-row sm:w-9/12">
         <div className="flex flex-row h-80 w-full m-auto relative  sm:w-1/2 ">
           <img
