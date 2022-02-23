@@ -1,8 +1,8 @@
 
 import React from "react";
 import image from "../assets/ani5.gif";
-import { BiCodeAlt, BiGridAlt } from "react-icons/bi";
-import Logo from "../assets/logo.png"
+import { BiCodeAlt} from "react-icons/bi";
+import {Link as LinkScroll} from 'react-scroll';
 
 
 function HeroSection({ setShowNavBar }) {
@@ -38,11 +38,16 @@ function HeroSection({ setShowNavBar }) {
         <div className="text-white text-center m-auto  sm:w-1/2">
           <h1 className="text-5xl font-bold">Fede Ferrelli</h1>
           <h2 className="text-xl uppercase ">Front end developer</h2>
-          <button
+         <button
             className="bg-pink-600 px-6 py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
-         sm:hover:bg-pink-700  ease-in-out duration-300"
-          >
+         sm:hover:bg-pink-700  ease-in-out duration-300">
+           <LinkScroll
+           activeClass="active"
+           to="contact"
+           spy={true}
+           smooth={true}>
             Contactame
+          </LinkScroll>
           </button>
           <BiCodeAlt className="m-auto text-center text-4xl mt-4" />
         </div>

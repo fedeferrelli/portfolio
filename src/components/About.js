@@ -4,6 +4,8 @@ import Curriculum from '../assets/CV_Fede_Ferrelli_Front_End.pdf';
 
 
 
+
+
 function About() {
   return (
     <div id="about" className="bg-gray-100 pt-12 pb-8 w-full sm:w-3/4 flex flex-col justify-center">
