@@ -43,10 +43,10 @@ function HeroSection({ setShowNavBar }) {
          sm:hover:bg-pink-700  ease-in-out duration-300">
            <LinkScroll
            activeClass="active"
-           to="contact"
+           to="projects"
            spy={true}
            smooth={true}>
-            Contactame
+            Mis Trabajos
           </LinkScroll>
           </button>
           <BiCodeAlt className="m-auto text-center text-4xl mt-4" />
