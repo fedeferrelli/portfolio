@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 5s ',
-      }
+        'spin-slow': 'spin 3s ',
+      },
     }
   },
   plugins: [],

@@ -1,12 +1,13 @@
 import React from "react";
 import stack, { stack_to_come } from "../assets/stack";
 import DisplayStacks from "./DisplayStacks";
+import {Fade } from 'react-awesome-reveal'
 
 function Stack() {
   return (
-    <>
+    <Fade direction="right" duration="1500" triggerOnce className="flex">
       
-      <div id="stack" className="bg-gray-100 pb-8 pt-12 w-full  sm:w-3/4">
+      <div id="stack" className="bg-gray-100 pb-8 pt-12 w-full  sm:w-10/12">
         
 
         <div className="text-5xl font-extrabold text-center">
@@ -41,7 +42,7 @@ function Stack() {
         </div>
       </div>
       {/* <div className=" h-4 bg-gradient-to-b from-purple-800"></div> */}
-    </>
+    </Fade>
   );
 }
 
