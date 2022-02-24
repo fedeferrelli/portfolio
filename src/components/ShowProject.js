@@ -51,10 +51,10 @@ function ShowProject({ project, index }) {
       <div className='w-full flex flex-row justify-evenly items-center py-4 '>
 
         <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg text-white font-sans
-         sm:hover:bg-pink-700  ease-in-out duration-300"><a href={link ? link : apk}>{link ? 'site' : 'apk'}</a></button>
+         sm:hover:bg-pink-700  ease-in-out duration-300"><a href={link ? link : apk} rel="noreferrer" target="_blank">{link ? 'site' : 'apk'}</a></button>
 
         <button className="bg-pink-600 w-2/5 px-6 py-3 uppercase rounded-lg  text-white font-sans
-         sm:hover:bg-pink-700  ease-in-out duration-300"><a href={code}>Code</a></button>
+         sm:hover:bg-pink-700  ease-in-out duration-300"><a href={code} rel="noreferrer" target="_blank">Code</a></button>
 
       </div>
       
