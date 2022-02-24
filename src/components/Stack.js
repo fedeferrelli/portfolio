@@ -27,8 +27,8 @@ function Stack() {
           ))}
         </div>
 
-        <h2 className="text-purple-800 text-center mt-4">Coming soon ...</h2>
-        <div className="flex flex-wrap justify-center my-3">
+        <h2 className="text-purple-800 text-center mt-4 ">Coming soon ...</h2>
+        <div className="flex flex-wrap justify-center m-auto my-4 sm:w-2/3">
           {stack_to_come.map((stack) => (
             <DisplayStacks
               key={Math.random()

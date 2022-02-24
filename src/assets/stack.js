@@ -13,7 +13,9 @@ const stack = ["HTML5",
 export const stack_to_come = ["TypeScript", 
 "Redux",
 "Next.js", 
-"Vue" ]
+"Vue", 
+"Angular",
+"Svelte"]
 
 
 
