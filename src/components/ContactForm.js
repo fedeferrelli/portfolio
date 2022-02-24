@@ -4,7 +4,7 @@ import { animateScroll as scroll } from "react-scroll";
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-  const [showOK, setShowOK] = useState(true);
+  const [showOK, setShowOK] = useState(false);
 
   const form = useRef();
 
