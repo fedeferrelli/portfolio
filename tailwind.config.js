@@ -3,8 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
- 
+    extend: {
+      animation: {
+        'spin-slow': 'spin 5s ',
+      }
+    }
   },
   plugins: [],
 }

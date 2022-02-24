@@ -19,10 +19,10 @@ function NavBar({ setShowNavBar }) {
   return (
 
     
-    <Fade
+    <Fade 
       direction="down"
       duration="500"
-      className="w-full h-80 absolute bg-gray-300 z-50 rounded-b-lg shadow-md shadow-gray-700"
+      className="w-full h-80 absolute bg-pink-500 z-50 rounded-b-lg shadow-md shadow-gray-700"
     >
 
 <div className="flex flex-col">
@@ -37,19 +37,19 @@ function NavBar({ setShowNavBar }) {
 
   <div className="flex flex-col h-60 items-center justify-center">   
 
-            <div className='mx-4 text-purple-800 text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("about")}>
+            <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2 ' onClick={(e) =>srollAndClose("about")}>
             Quien soy
             </div>
 
-            <div className='mx-4 text-purple-800 text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("stack")}>
+            <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("stack")}>
             mi Stack
             </div>
 
-            <div className='mx-4 text-purple-800 text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("projects", 2000)}>
+            <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("projects", 2000)}>
             Proyectos
             </div>
 
-            <div className='mx-4 text-purple-800 text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("contact", 3000)}>
+            <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("contact", 3000)}>
             Contacto
             </div>
 </div>      
