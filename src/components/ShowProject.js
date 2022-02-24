@@ -22,7 +22,7 @@ function ShowProject({ project, index }) {
             .toString(36)
             .replace(/[^a-z]+/g, "")
             .substr(0, 5)}
-            className="py-1 px-3 bg-purple-800 text-md shadow-md shadow-gray-400
+            className="py-0.5 px-3 bg-purple-800 text-md shadow-md shadow-gray-400
             rounded-full border border-purple-800/25 m-1.5 text-white ">{item}</div>
         ))}
         </div>
