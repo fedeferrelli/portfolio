@@ -5,7 +5,7 @@ import {Fade } from 'react-awesome-reveal'
 
 function Stack() {
   return (
-    <Fade direction="right" duration="1500" triggerOnce className="flex">
+    <div className="flex flex-col justify-center items-center">
       
       <div id="stack" className="bg-gray-100 pb-8 pt-12 w-full  sm:w-10/12">
         
@@ -16,7 +16,11 @@ function Stack() {
         </span>
       </div>
 
-        <div className="flex flex-wrap justify-center m-auto my-4 sm:w-2/3">
+      <div className="flex flex-col justify-center items-center w-full" >
+
+      <Fade direction="up" duration="1500" triggerOnce >
+
+        <div className="flex flex-wrap justify-center m-auto my-4 sm:w-full">
           {stack.map((stack) => (
             <DisplayStacks
               key={Math.random()
@@ -40,9 +44,12 @@ function Stack() {
             />
           ))}
         </div>
+        </Fade>
+        </div>
       </div>
+      
       {/* <div className=" h-4 bg-gradient-to-b from-purple-800"></div> */}
-    </Fade>
+    </div>
   );
 }
 

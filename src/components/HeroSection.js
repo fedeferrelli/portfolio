@@ -20,7 +20,7 @@ function HeroSection({ setShowNavBar }) {
             className=" h-[350px] z-10 m-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] sm:h-full"
           />
 
-          <div className="absolute sm:left-1/4  animate-spin-slow w-full h-full sm:w-1/2">
+          <div className="absolute animate-spin-slow w-full h-full">
             <div
               className="w-40 h-40 rounded-full bg-gradient-to-b from-purple-500/75 to-pink-500/75 border border-pink-400/25 shadow-md shadow-gray-500/50
                absolute top-1 right-2"

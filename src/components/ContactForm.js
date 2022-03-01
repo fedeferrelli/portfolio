@@ -39,7 +39,7 @@ function ContactForm() {
       <form
         onSubmit={sendEmail}
         ref={form}
-        className=" w-10/12  sm:w-3/4 sm:text-sm max-w-[600px] m-auto flex flex-col justify-center items-center p-10 drop-shadow-[0_35px_35px_rgba(0,0,0,0.75)] bg-purple-800/75 mt-10"
+        className=" w-10/12  sm:w-3/4 sm:text-sm max-w-[450px] m-auto flex flex-col justify-center items-center p-10 drop-shadow-[0_35px_35px_rgba(0,0,0,0.75)] bg-purple-800/75 mt-10"
       >
         {showOK && (
           <div className="bg-black/50 absolute w-full h-full z-50 text-center flex flex-col justify-center items-center">

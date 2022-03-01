@@ -9,14 +9,15 @@ import Curriculum from '../assets/CV_Fede_Ferrelli_Front_End.pdf';
 
 function About() {
   return (
-    <Fade direction="left" duration="1500" triggerOnce className="flex">
+  
     <div id="about" className="bg-gray-100 pt-12 m-auto pb-8 w-full sm:w-10/12 flex flex-col justify-center">
-    
+   
       <div className="text-5xl font-extrabold text-center">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-900 via-purple-800 to-pink-500">
           Quién Soy
         </span>
       </div>
+      <Fade  direction="up" duration="1500" triggerOnce className="flex">
       <p className="w-10/12 m-auto mt-4 font-mono leading-loose sm:w-2/3 sm:text-center">
         Apasionado por el desarrollo Front End, disfruto de resolver problemas con {" "}
         <span className="bg-gradient-to-r from-violet-900/50 via-purple-800/50 to-pink-500/50  font-bold">
@@ -41,10 +42,11 @@ function About() {
             <a href={Curriculum} download>Descargar CV</a>
             
           </button>
-
+          </Fade>
           
     </div>
-    </Fade>
+  
+   
   );
 }
 

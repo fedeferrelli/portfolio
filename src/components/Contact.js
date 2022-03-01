@@ -18,22 +18,22 @@ function Contact() {
           <div className="flex flex-row justify-evenly">
 
           <a href="https://www.linkedin.com/in/federico-mazza-75ab00231/" rel="noreferrer" target="_blank">
-              <BsLinkedin className="text-pink-500/75 text-4xl" />
+              <BsLinkedin className="text-pink-500/75 text-4xl sm:hover:-translate-y-2 duration-300" />
             </a>
 
 
             
             <a href="https://twitter.com/Fe__Dev__"  rel="noreferrer" target="_blank">
-              <BsTwitter className="text-pink-500/75 text-4xl" />
+              <BsTwitter className="text-pink-500/75 text-4xl sm:hover:-translate-y-2 duration-300" />
             </a>
 
             <a href="mailto:ferrelli.mazza@gmail.com" rel="noreferrer" target="_blank">
-              <MdEmail className="text-pink-500/75 text-4xl" />
+              <MdEmail className="text-pink-500/75 text-4xl sm:hover:-translate-y-2 duration-300" />
             </a>
 
 
             <a href=" https://github.com/fedeferrelli" rel="noreferrer" target="_blank">
-              <BsGithub className="text-pink-500/75 text-4xl" />
+              <BsGithub className="text-pink-500/75 text-4xl sm:hover:-translate-y-2 duration-300" />
             </a>
 
           </div>
