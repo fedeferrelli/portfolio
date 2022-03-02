@@ -4,7 +4,7 @@ import { BiCodeAlt } from "react-icons/bi";
 import { Link as LinkScroll } from "react-scroll";
 import {Fade} from 'react-awesome-reveal'
 
-function HeroSection({ setShowNavBar }) {
+function HeroSection({ setShowNavBar, language }) {
   return (
     <div
       className="w-full h-screen  flex flex-col justify-between items-center    
@@ -43,7 +43,7 @@ function HeroSection({ setShowNavBar }) {
  
         <div className="text-white text-center m-auto">
           {/* <h1 className="hidden sm:inline text-5xl font-bold">Hola, soy</h1> */}
-          <h1 className="text-5xl font-bold w-full"><span className="hidden sm:inline text-5xl font-bold">Hola, soy &nbsp;</span>Fede Ferrelli</h1>
+          <h1 className="text-5xl font-bold w-full"><span className="hidden sm:inline text-5xl font-bold">{language=== 'esp' ? 'Hola, soy' : "Hello, I'm"}   &nbsp;</span>Fede Ferrelli</h1>
           <h2 className="text-xl uppercase mt-4">Front end developer</h2>
           <button
             className="bg-pink-600 px-6 py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
@@ -55,7 +55,7 @@ function HeroSection({ setShowNavBar }) {
               spy={true}
               smooth={true}
             >
-              Mis Trabajos
+             {language === 'esp' ? "Mis Trabajos" : "Portfolio"} 
             </LinkScroll>
           </button>
           <BiCodeAlt className="m-auto text-center text-4xl mt-4" />

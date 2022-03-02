@@ -6,37 +6,44 @@ import About from "./components/About";
 import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Language from "./components/Language";
 
 
 
 
 function App() {
   const [showNavBar, setShowNavBar] = useState(false);
-
+  const [language, setLanguage] = useState("esp");
+  
   return (
     <>
+   {/*  <Language
+    language={language}
+    setLanguage={setLanguage}/> */}
       {showNavBar && <NavBar setShowNavBar={setShowNavBar} />}
 
-      {<NavBarLaptop  setShowNavBar={setShowNavBar} />}
+      {<NavBarLaptop  setShowNavBar={setShowNavBar}
+      language={language}
+      setLanguage={setLanguage} />}
 
-            <HeroSection />
+            <HeroSection language={language} />
    
 
          <div className="bg-gray-100 w-full sm:flex sm:flex-row">
    
-              <About className=" sm:w-1/2" />
+              <About className=" sm:w-1/2" language={language}/>
       
 
-              <Stack className="sm:w-1/2" />
+              <Stack className="sm:w-1/2" language={language} />
     
        </div>
 
         
-            <Projects />
+            <Projects language={language} />
         
 
        
-            <Contact />
+            <Contact language={language} />
    
     </>
   );

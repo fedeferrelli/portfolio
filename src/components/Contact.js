@@ -6,12 +6,12 @@ import ContactForm from './ContactForm';
 import {BsLinkedin, BsTwitter, BsGithub} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md';
 
-function Contact() {
+function Contact({language}) {
     return (
       <div id="contact" className=" bg-gradient-to-b from-purple-800 via-violet-900 to-indigo-900 pt-10 pb-10">
         <div className="text-5xl font-extrabold text-center mb-8 ">
           <span className="bg-clip-text text-white">
-            Contacto
+            {language === 'esp' ? 'Contacto' : 'Contact'}
           </span>
         </div>
         <Fade direction="up" duration="1000" triggerOnce className="max-w-[400px] m-auto">
@@ -38,7 +38,7 @@ function Contact() {
 
           </div>
         </Fade>
-        <ContactForm/>
+        <ContactForm language={language}/>
       </div>
     );
 }

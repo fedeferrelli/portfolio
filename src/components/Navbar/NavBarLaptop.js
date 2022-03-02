@@ -1,24 +1,34 @@
 import React from "react";
+import Language from "../Language";
 
 import {BiGridAlt } from "react-icons/bi";
 
 
 import { Link as LinkScroll } from "react-scroll";
 
-function NavBarLaptop({ setShowNavBar }) {
+function NavBarLaptop({ setShowNavBar, language, setLanguage }) {
  
   return (
    
-<>
+<div className="flex flex-row justify-between bg-indigo-900">
 
-      <div className=" w-full flex flex-row justify-end z-50 bg-indigo-900  p-2 sm:hidden">
-        
+<Language
+language={language}
+setLanguage={setLanguage}/>
+
+      <div className="  flex flex-row justify-between z-50 bg-indigo-900 items-center p-2 sm:hidden">
+    
+     
+
         <BiGridAlt
           className="text-white text-4xl"
           onClick={(e) => {
             setShowNavBar(true);
           }}
         />
+
+
+
       </div>
 
    
@@ -32,21 +42,21 @@ function NavBarLaptop({ setShowNavBar }) {
             to="about"
             spy={true}
             smooth={true} 
-            className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'>Quien soy</LinkScroll>
+            className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'>{language === 'esp' ? "Quien soy" : "About"} </LinkScroll>
      
       <LinkScroll 
             activeClass="active"
             to="stack"
             spy={true}
             smooth={true} 
-            className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'> Mi Stack</LinkScroll>
+            className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'>{language === 'esp' ? "Mi Stack" : "My Stack"} </LinkScroll>
       
       <LinkScroll 
             activeClass="active"
             to="projects"
             spy={true}
             smooth={true}
-             className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'>Proyectos</LinkScroll>
+             className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'>{language === 'esp' ? "Proyectos" : "Portfolio"}</LinkScroll>
      
       <LinkScroll 
             activeClass="active"
@@ -54,12 +64,12 @@ function NavBarLaptop({ setShowNavBar }) {
             spy={true}
             smooth={true}
             duration={2000}
-            className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'>Contacto</LinkScroll>
+            className='mx-4 text-white text-xl cursor-pointer hover:text-pink-500 ease-in-out duration-300'> {language === 'esp' ? "Contacto" : "Contact"}</LinkScroll>
     
     
     </div>
 
-    </>
+    </div>
 
 
   

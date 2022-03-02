@@ -3,7 +3,7 @@ import { animateScroll as scroll } from "react-scroll";
 
 import emailjs from "@emailjs/browser";
 
-function ContactForm() {
+function ContactForm({language}) {
   const [showOK, setShowOK] = useState(false);
 
   const form = useRef();
@@ -43,12 +43,12 @@ function ContactForm() {
       >
         {showOK && (
           <div className="bg-black/50 absolute w-full h-full z-50 text-center flex flex-col justify-center items-center">
-            <div className="w-full h-full flex flex-col justify-center sm:w-1/2 sm:h-auto border border-pink-500 p-10 bg-purple-800 text-white">
+            <div className="w-full h-full flex flex-col justify-center sm:w-3/4 sm:h-auto border border-pink-500 p-10 bg-purple-800 text-white">
               <h1 className="text-xl mb-4">
-                <span className="text-3xl block">Gracias</span> por comunicarte
-                conmigo
+                <span className="text-3xl block ">{language === 'esp' ? 'Gracias' : 'Thanks'}</span> {language === 'esp' ? 'for comunicarte conmigo' : 'for getting in touch with me'} 
+                
               </h1>
-              <h2>me pondré en contacto a la brevedad</h2>
+              <h2> {language === 'esp' ? 'me pondré en contacto a la brevedad' : "I'll get back to you asap"} </h2>
               <button
                 className="bg-pink-600 w-full py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
          sm:hover:bg-pink-700  ease-in-out duration-300"
@@ -60,7 +60,7 @@ function ContactForm() {
           </div>
         )}
         <h1 className="w-full text-2xl text-center text-pink-500 bold">
-          Formulario de Contacto
+          {language === 'esp' ? 'Enviame un mensaje' : 'Send me a message'}
         </h1>
 
         <p className="mt-8 w-full text-white focus-within:text-pink-500 border border-t-transparent border-pink-500 ">
@@ -68,7 +68,7 @@ function ContactForm() {
             htmlFor="nombre"
             className="w-full px-4  focus-within:text-pink-500 ease-in-out duration-300"
           >
-            Nombre
+            {language === 'esp' ? 'Nombre' : 'Name'}
           </label>
 
           <input
@@ -84,7 +84,7 @@ function ContactForm() {
             htmlFor="mail"
             className="w-full px-4 focus-within:text-pink-500 ease-in-out duration-300"
           >
-            Dirección de correo *
+           {language === 'esp' ? 'Dirección de correo *' : 'Email address *'} 
           </label>
 
           <input
@@ -101,7 +101,7 @@ function ContactForm() {
             htmlFor="asunto"
             className="w-full px-4  focus-within:text-pink-500 ease-in-out duration-300"
           >
-            Asunto
+            {language === 'esp' ? 'Asunto' : 'Subject'}
           </label>
 
           <input
@@ -117,7 +117,7 @@ function ContactForm() {
             htmlFor="mensaje"
             className="w-full px-4 focus-within:text-pink-500 ease-in-out duration-300"
           >
-            Mensaje *
+            {language === 'esp' ? 'Mensaje *' : 'Message *'}
           </label>
 
           <textarea
@@ -131,7 +131,7 @@ function ContactForm() {
 
         <input
           type="submit"
-          value="enviar mensaje"
+          value={language === 'esp' ? "enviar mensaje" : "send message"}
           className="bg-pink-600 w-full py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
          sm:hover:bg-pink-700  ease-in-out duration-300"
         ></input>
