@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/ani5.gif";
+import image from "../../assets/ani5.gif";
 import { BiCodeAlt } from "react-icons/bi";
 import { Link as LinkScroll } from "react-scroll";
 import {Fade} from 'react-awesome-reveal'

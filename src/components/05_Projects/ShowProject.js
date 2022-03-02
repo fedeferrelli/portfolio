@@ -29,7 +29,7 @@ function ShowProject({ project, index, language }) {
         </div>
         
         <img
-            src={require(`../assets/${image}.jpg`)}
+            src={require(`../../assets/images_projects/${image}.jpg`)}
             alt={image}
             className="w-full"
           />

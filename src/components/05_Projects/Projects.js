@@ -1,5 +1,5 @@
 import React from 'react';
-import projects from '../assets/projects';
+import projects from '../../assets/utils/projects';
 import ShowProject from './ShowProject';
 
 function Projects({language}) {

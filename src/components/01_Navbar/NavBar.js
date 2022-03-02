@@ -1,12 +1,12 @@
 import React from "react";
-import Language from "../Language";
+import Language from "./Language";
 
 import {BiGridAlt } from "react-icons/bi";
 
 
 import { Link as LinkScroll } from "react-scroll";
 
-function NavBarLaptop({ setShowNavBar, language, setLanguage }) {
+function NavBar({ setShowNavBar, language, setLanguage }) {
  
   return (
    
@@ -76,4 +76,4 @@ setLanguage={setLanguage}/>
   );
 }
 
-export default NavBarLaptop;
+export default NavBar;

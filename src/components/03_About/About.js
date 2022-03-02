@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-import Curriculum from '../assets/CV_Fede_Ferrelli_Front_End.pdf';
+import Curriculum from '../../assets/CV_Fede_Ferrelli_Front_End.pdf';
 
 
 

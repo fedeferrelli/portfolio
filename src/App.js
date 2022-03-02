@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import HeroSection from "./components/HeroSection";
-import NavBar from "./components/Navbar/NavBar";
-import NavBarLaptop from "./components/Navbar/NavBarLaptop";
-import About from "./components/About";
-import Stack from "./components/Stack";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Language from "./components/Language";
+import HeroSection from "./components/02_HeroSection/HeroSection";
+import FloatingNavBar from "./components/01_Navbar/FloatingNavBar";
+import NavBar from "./components/01_Navbar/NavBar";
+import About from "./components/03_About/About";
+import Stack from "./components/04_Stack/Stack";
+import Projects from "./components/05_Projects/Projects";
+import Contact from "./components/06_Contact/Contact";
+
 
 
 
@@ -18,9 +18,9 @@ function App() {
   return (
     <>
 
-      {showNavBar && <NavBar setShowNavBar={setShowNavBar} language={language} />}
+      {showNavBar && <FloatingNavBar setShowNavBar={setShowNavBar} language={language} />}
 
-      <NavBarLaptop  setShowNavBar={setShowNavBar}
+      <NavBar  setShowNavBar={setShowNavBar}
       language={language}
       setLanguage={setLanguage} />
 

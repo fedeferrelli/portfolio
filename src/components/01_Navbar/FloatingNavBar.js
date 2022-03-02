@@ -3,7 +3,7 @@ import { BiX } from "react-icons/bi";
 import { Fade } from "react-awesome-reveal";
 import {scroller} from "react-scroll"
 
-function NavBar({ setShowNavBar, language }) {
+function FloatingNavBar({ setShowNavBar, language }) {
 
   const srollAndClose = (WhereTo, duration=1000) =>{
     scroller.scrollTo(WhereTo, {
@@ -62,4 +62,4 @@ function NavBar({ setShowNavBar, language }) {
   );
 }
 
-export default NavBar;
+export default FloatingNavBar;

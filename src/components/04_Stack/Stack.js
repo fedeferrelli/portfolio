@@ -1,5 +1,5 @@
 import React from "react";
-import stack, { stack_to_come } from "../assets/stack";
+import stack, { stack_to_come } from "../../assets/utils/stack";
 import DisplayStacks from "./DisplayStacks";
 import {Fade } from 'react-awesome-reveal'
 
