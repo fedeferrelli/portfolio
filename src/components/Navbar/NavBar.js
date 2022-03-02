@@ -3,7 +3,7 @@ import { BiX } from "react-icons/bi";
 import { Fade } from "react-awesome-reveal";
 import {scroller} from "react-scroll"
 
-function NavBar({ setShowNavBar }) {
+function NavBar({ setShowNavBar, language }) {
 
   const srollAndClose = (WhereTo, duration=1000) =>{
     scroller.scrollTo(WhereTo, {
@@ -38,19 +38,19 @@ function NavBar({ setShowNavBar }) {
   <div className="flex flex-col h-60 items-center justify-center">   
 
             <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2 ' onClick={(e) =>srollAndClose("about")}>
-            Quien soy
+            {language === 'esp' ? "Quien soy" : "About"}
             </div>
 
             <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("stack")}>
-            mi Stack
+            {language === 'esp' ? "mi Stack" : "my Stack"}
             </div>
 
             <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("projects", 2000)}>
-            Proyectos
+            {language === 'esp' ? "Proyectos" : "Portfolio"}
             </div>
 
             <div className='mx-4 text-white font-mono text-2xl cursor-pointer py-2' onClick={(e) =>srollAndClose("contact", 3000)}>
-            Contacto
+            {language === 'esp' ? "Contacto" : "Contact"}
             </div>
 </div>      
 </div>

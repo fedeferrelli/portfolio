@@ -16,7 +16,7 @@ function NavBarLaptop({ setShowNavBar, language, setLanguage }) {
 language={language}
 setLanguage={setLanguage}/>
 
-      <div className="  flex flex-row justify-between z-50 bg-indigo-900 items-center p-2 sm:hidden">
+      <div className="  flex flex-row justify-between  bg-indigo-900 items-center p-2 sm:hidden">
     
      
 

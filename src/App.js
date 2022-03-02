@@ -17,14 +17,12 @@ function App() {
   
   return (
     <>
-   {/*  <Language
-    language={language}
-    setLanguage={setLanguage}/> */}
-      {showNavBar && <NavBar setShowNavBar={setShowNavBar} />}
 
-      {<NavBarLaptop  setShowNavBar={setShowNavBar}
+      {showNavBar && <NavBar setShowNavBar={setShowNavBar} language={language} />}
+
+      <NavBarLaptop  setShowNavBar={setShowNavBar}
       language={language}
-      setLanguage={setLanguage} />}
+      setLanguage={setLanguage} />
 
             <HeroSection language={language} />
    
