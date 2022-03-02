@@ -35,7 +35,7 @@ setLanguage={setLanguage}/>
 
     <div      
      
-      className="hidden w-full sm:flex sm:flex-row justify-end z-50  p-2 bg-indigo-900"
+      className="hidden w-full sm:flex sm:flex-row justify-end p-2 bg-indigo-900"
     >
       <LinkScroll 
             activeClass="active"

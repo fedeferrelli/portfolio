@@ -19,6 +19,7 @@ function Projects({language}) {
               .substr(0, 5)}
             project={project}
             index={index}
+            language={language}
             
           />
         ))}

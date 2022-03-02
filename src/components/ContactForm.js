@@ -131,7 +131,7 @@ function ContactForm({language}) {
 
         <input
           type="submit"
-          value={language === 'esp' ? "enviar mensaje" : "send message"}
+          value={language === 'esp' ? "enviar mensaje" : "send it!"}
           className="bg-pink-600 w-full py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
          sm:hover:bg-pink-700  ease-in-out duration-300"
         ></input>

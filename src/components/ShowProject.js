@@ -1,8 +1,8 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-function ShowProject({ project, index }) {
-  const { name, description, link, apk, code, image, stack } = project;
+function ShowProject({ project, index, language }) {
+  const { name, description_esp, description_eng, link, apk, code, image, stack } = project;
  const reindex = index+1
 
   return (
@@ -45,7 +45,7 @@ function ShowProject({ project, index }) {
       </h1>
 
       <p className=' px-4 py-2 font-mono sm:px-8'>
-          {description}
+          {language === 'esp' ? description_esp : description_eng}
       </p>
 
       <div className='w-full flex flex-row justify-evenly items-center py-4 '>

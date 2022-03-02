@@ -4,7 +4,7 @@ function Language({language, setLanguage}) {
 
 
     return (
-      <div className="flex flex-row justify-center items-center text-white w-auto bg-indigo-900 pl-2">
+      <div className="flex flex-row justify-center items-center text-white w-auto bg-indigo-900 pl-2 cursor-pointer">
         <h1 className={language === "eng" ? "opacity-50" : "opacity-100"}>
           ESP
         </h1>
