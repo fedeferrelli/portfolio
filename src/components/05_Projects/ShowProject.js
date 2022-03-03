@@ -24,7 +24,7 @@ function ShowProject({ project, index, language }) {
         <div className="w-10/12  m-auto bg-white rounded border drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)] h-auto  sm:hover:-translate-y-1 duration-300">
           <div className="relative w-full h-96 overflow-hidden">
             <div className="absolute w-full h-full bg-white duration-700 opacity-0 hover:opacity-95 flex flex-col justify-between items-center ">
-              <div className="flex flex-wrap justify-center  h-auto item-center  w-10/12 ">
+              <div className="flex flex-wrap justify-center  h-auto item-center pt-4 w-10/12 ">
                 {stack.map((item) => (
                   <div
                     key={Math.random()
@@ -38,7 +38,7 @@ function ShowProject({ project, index, language }) {
                   </div>
                 ))}
               </div>
-              <p className=" px-4 py-2 font-mono sm:px-8 font-bold text-center">
+              <p className=" px-4 py-2 font-mono sm:px-8 text-center">
                 {language === "esp" ? description_esp : description_eng}
               </p>
             </div>
