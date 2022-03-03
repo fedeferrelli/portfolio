@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import { animateScroll as scroll } from "react-scroll";
 
+import { animateScroll as scroll } from "react-scroll";
 import emailjs from "@emailjs/browser";
 
-function ContactForm({language}) {
+function ContactForm({ language }) {
   const [showOK, setShowOK] = useState(false);
 
   const form = useRef();
@@ -45,10 +45,19 @@ function ContactForm({language}) {
           <div className="bg-black/50 absolute w-full h-full z-50 text-center flex flex-col justify-center items-center">
             <div className="w-full h-full flex flex-col justify-center sm:w-3/4 sm:h-auto border border-pink-500 p-10 bg-purple-800 text-white">
               <h1 className="text-xl mb-4">
-                <span className="text-3xl block ">{language === 'esp' ? 'Gracias' : 'Thanks'}</span> {language === 'esp' ? 'for comunicarte conmigo' : 'for getting in touch with me'} 
-                
+                <span className="text-3xl block ">
+                  {language === "esp" ? "Gracias" : "Thanks"}
+                </span>{" "}
+                {language === "esp"
+                  ? "for comunicarte conmigo"
+                  : "for getting in touch with me"}
               </h1>
-              <h2> {language === 'esp' ? 'me pondré en contacto a la brevedad' : "I'll get back to you asap"} </h2>
+              <h2>
+                {" "}
+                {language === "esp"
+                  ? "me pondré en contacto a la brevedad"
+                  : "I'll get back to you asap"}{" "}
+              </h2>
               <button
                 className="bg-pink-600 w-full py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
          sm:hover:bg-pink-700  ease-in-out duration-300"
@@ -60,7 +69,7 @@ function ContactForm({language}) {
           </div>
         )}
         <h1 className="w-full text-2xl text-center text-pink-500 bold">
-          {language === 'esp' ? 'Enviame un mensaje' : 'Send me a message'}
+          {language === "esp" ? "Enviame un mensaje" : "Send me a message"}
         </h1>
 
         <p className="mt-8 w-full text-white focus-within:text-pink-500 border border-t-transparent border-pink-500 ">
@@ -68,7 +77,7 @@ function ContactForm({language}) {
             htmlFor="nombre"
             className="w-full px-4  focus-within:text-pink-500 ease-in-out duration-300"
           >
-            {language === 'esp' ? 'Nombre' : 'Name'}
+            {language === "esp" ? "Nombre" : "Name"}
           </label>
 
           <input
@@ -84,7 +93,7 @@ function ContactForm({language}) {
             htmlFor="mail"
             className="w-full px-4 focus-within:text-pink-500 ease-in-out duration-300"
           >
-           {language === 'esp' ? 'Dirección de correo *' : 'Email address *'} 
+            {language === "esp" ? "Dirección de correo *" : "Email address *"}
           </label>
 
           <input
@@ -101,7 +110,7 @@ function ContactForm({language}) {
             htmlFor="asunto"
             className="w-full px-4  focus-within:text-pink-500 ease-in-out duration-300"
           >
-            {language === 'esp' ? 'Asunto' : 'Subject'}
+            {language === "esp" ? "Asunto" : "Subject"}
           </label>
 
           <input
@@ -117,7 +126,7 @@ function ContactForm({language}) {
             htmlFor="mensaje"
             className="w-full px-4 focus-within:text-pink-500 ease-in-out duration-300"
           >
-            {language === 'esp' ? 'Mensaje *' : 'Message *'}
+            {language === "esp" ? "Mensaje *" : "Message *"}
           </label>
 
           <textarea
@@ -131,7 +140,7 @@ function ContactForm({language}) {
 
         <input
           type="submit"
-          value={language === 'esp' ? "enviar mensaje" : "send it!"}
+          value={language === "esp" ? "enviar mensaje" : "send it!"}
           className="bg-pink-600 w-full py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
          sm:hover:bg-pink-700  ease-in-out duration-300"
         ></input>

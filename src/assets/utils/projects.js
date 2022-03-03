@@ -66,7 +66,7 @@ const projects = [
     description_esp:
       "Página diseñada para un emprendimiento familiar relacionado con la jardinería. Se pueden ver los servicios y distintas formas de contacto",
     description_eng:
-      "Web Page developed for a family business related to gardening. You can see the services and different forms of contact",
+      "Web Page developed for a family business related to gardening. You can see the services and different ways of contact",
     link: "https://mi-jardin.netlify.app/",
     code: "https://github.com/fedeferrelli/miJardin",
     image: "miJardin",

@@ -1,7 +1,10 @@
 import React from "react";
+
+import {Fade } from 'react-awesome-reveal'
+
 import stack, { stack_to_come } from "../../assets/utils/stack";
 import DisplayStacks from "./DisplayStacks";
-import {Fade } from 'react-awesome-reveal'
+
 
 function Stack({language}) {
   return (
