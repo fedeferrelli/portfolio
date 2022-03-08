@@ -12,7 +12,7 @@ function NavBar({ setShowNavBar, showNavBar,language, setLanguage }) {
     <div className="bg-indigo-900/0 w-full fixed z-50">
       <Fade delay="250" triggerOnce>
 
-<div className="w-full bg-indigo-900/90 flex flex-row justify-between">
+<div className="w-full bg-indigo-900 flex flex-row justify-between">
 
        
   
