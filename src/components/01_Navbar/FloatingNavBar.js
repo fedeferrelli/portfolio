@@ -42,7 +42,7 @@ function FloatingNavBar({ setShowNavBar, language }) {
 
 
           <ul
-            className="mx-4 text-white font-mono text-2xl cursor-pointer py-2 "
+            className="mx-4 text-white font-mono text-2xl cursor-pointer py-2"
             onClick={(e) => srollAndClose("about")}
           >
             {language === "esp" ? "Quien soy" : "About"}
