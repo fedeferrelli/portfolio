@@ -42,17 +42,21 @@ function About({ language }) {
           .
         </p>
 
-        <button
-          className="m-auto bg-pink-600 px-10 py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.25)]
-         sm:hover:bg-pink-700  ease-in-out duration-300"
-        >
+  
           <a
             href={language === "esp" ? Curriculum_esp : Curriculum_eng}
             download
+            className="m-auto mt-8"
           >
+      <button
+          className="bg-pink-600 px-10 py-3 uppercase rounded-lg  text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.25)]
+         sm:hover:bg-pink-700  ease-in-out duration-300"
+        >
             {language === "esp" ? "Descargar CV" : "Download Resume"}
+
+            </button>
           </a>
-        </button>
+       
       </Fade>
     </div>
   );

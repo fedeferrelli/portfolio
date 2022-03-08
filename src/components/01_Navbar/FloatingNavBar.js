@@ -31,35 +31,44 @@ function FloatingNavBar({ setShowNavBar, language }) {
           />
         </div>
 
-        <div className="flex flex-col h-60 items-center justify-center">
-          <div
+        <nav className="flex flex-col h-60 items-center justify-center">
+
+        <ul
+            className="mx-4 text-white font-mono text-2xl cursor-pointer py-2 sm:hidden"
+            onClick={(e) => srollAndClose("home")}
+          >
+           Home
+          </ul>
+
+
+          <ul
             className="mx-4 text-white font-mono text-2xl cursor-pointer py-2 "
             onClick={(e) => srollAndClose("about")}
           >
             {language === "esp" ? "Quien soy" : "About"}
-          </div>
+          </ul>
 
-          <div
+          <ul
             className="mx-4 text-white font-mono text-2xl cursor-pointer py-2"
             onClick={(e) => srollAndClose("stack")}
           >
             {language === "esp" ? "mi Stack" : "my Stack"}
-          </div>
+          </ul>
 
-          <div
+          <ul
             className="mx-4 text-white font-mono text-2xl cursor-pointer py-2"
             onClick={(e) => srollAndClose("projects", 2000)}
           >
             {language === "esp" ? "Proyectos" : "Portfolio"}
-          </div>
+          </ul>
 
-          <div
+          <ul
             className="mx-4 text-white font-mono text-2xl cursor-pointer py-2"
             onClick={(e) => srollAndClose("contact", 3000)}
           >
             {language === "esp" ? "Contacto" : "Contact"}
-          </div>
-        </div>
+          </ul>
+        </nav>
       </div>
     </Fade>
   );

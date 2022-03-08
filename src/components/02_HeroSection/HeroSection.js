@@ -8,6 +8,7 @@ import image from "../../assets/ani5.gif";
 function HeroSection({ setShowNavBar, language }) {
   return (
     <div
+    id="home"
       className="w-full h-screen pt-16 flex flex-col justify-between items-center    
     bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:flex-col "
     >
@@ -46,19 +47,20 @@ function HeroSection({ setShowNavBar, language }) {
               Fede Ferrelli
             </h1>
             <h2 className="text-xl uppercase mt-4">Front end developer</h2>
-            <button
-              className="bg-pink-600 px-10 py-3 uppercase rounded-lg mt-8 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
-          sm:hover:bg-pink-700  ease-in-out duration-300"
-            >
+       <button
+               className="mt-8"
+            > 
               <LinkScroll
                 activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
+                className="bg-pink-600 px-10 py-3 uppercase rounded-lg mt-18 text-white font-sans drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)]
+          sm:hover:bg-pink-700  ease-in-out duration-300 cursor-pointer"
               >
                 {language === "esp" ? "Mis Trabajos" : "Portfolio"}
               </LinkScroll>
-            </button>
+        </button>
             <BiCodeAlt className="m-auto text-center text-4xl mt-4" />
           </div>
         </Fade>
