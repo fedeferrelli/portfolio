@@ -24,7 +24,7 @@ function NavBar({ setShowNavBar, showNavBar,language, setLanguage }) {
 
           <div className=" p-2 sm:hidden">
             <BiGridAlt
-              className="text-white text-3xl bg-indigo-900 rounded-sm"
+              className="text-white text-4xl bg-indigo-900 rounded-sm"
               onClick={(e) => {
                 setShowNavBar(true);
               }}

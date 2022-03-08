@@ -9,7 +9,7 @@ function FloatingNavBar({ setShowNavBar, language }) {
       duration: duration,
       delay: 0,
       smooth: "easeInOutQuart",
-      offset: 0
+      offset: -30
     });
 
     setShowNavBar(false);
