@@ -2,8 +2,8 @@ import React from "react";
 
 function Language({ language, setLanguage }) {
   return (
-    <div className="flex flex-row justify-center items-center text-gray-300 w-auto bg-indigo-900 pl-2 cursor-pointer">
-      <h1 className={language === "eng" ? "opacity-50" : "opacity-100"}>ESP</h1>
+    <div className="flex flex-row justify-center items-center text-pink-500 w-auto pl-2 cursor-pointer">
+      <h1 className={language === "eng" ? "opacity-70" : "opacity-100"}>ESP</h1>
 
       <div className="rounded-full bg-gray-300 flex flex-row mx-1">
         <div
@@ -24,7 +24,7 @@ function Language({ language, setLanguage }) {
           onClick={() => setLanguage("eng")}
         ></div>
       </div>
-      <h1 className={language === "esp" ? "opacity-50" : "opacity-100"}>ENG</h1>
+      <h1 className={language === "esp" ? "opacity-70" : "opacity-100"}>ENG</h1>
     </div>
   );
 }

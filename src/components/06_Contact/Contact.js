@@ -11,7 +11,7 @@ function Contact({ language }) {
   return (
     <div
       id="contact"
-      className=" bg-gradient-to-b from-purple-800 via-violet-900 to-indigo-900 pt-10 pb-10"
+      className=" bg-gradient-to-b from-purple-800 via-violet-900 to-indigo-900 pt-12 pb-10"
     >
       <div className="text-5xl font-extrabold text-center mb-8 ">
         <span className="bg-clip-text text-white">

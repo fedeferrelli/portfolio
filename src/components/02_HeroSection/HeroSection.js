@@ -8,8 +8,8 @@ import image from "../../assets/ani5.gif";
 function HeroSection({ setShowNavBar, language }) {
   return (
     <div
-      className="w-full h-screen  flex flex-col justify-between items-center    
-    bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:flex-col  "
+      className="w-full h-screen pt-16 flex flex-col justify-between items-center    
+    bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:flex-col "
     >
       <div className="h-full flex flex-col justify-around  w-full  sm:flex-row wiggle">
         <div className="flex flex-row h-80 w-full m-auto relative sm:w-1/2 ">

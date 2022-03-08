@@ -9,6 +9,7 @@ function FloatingNavBar({ setShowNavBar, language }) {
       duration: duration,
       delay: 0,
       smooth: "easeInOutQuart",
+      offset: 0
     });
 
     setShowNavBar(false);
@@ -18,7 +19,7 @@ function FloatingNavBar({ setShowNavBar, language }) {
     <Fade
       direction="down"
       duration="500"
-      className="w-full h-80 absolute bg-pink-500 z-50 rounded-b-lg shadow-md shadow-gray-700"
+      className="w-full h-80 fixed bg-pink-500 z-50 rounded-b-lg shadow-md shadow-gray-700"
     >
       <div className="flex flex-col">
         <div className="w-full flex flex-row justify-end p-2">
