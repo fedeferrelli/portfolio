@@ -18,8 +18,9 @@ function ShowProject({ project, index, language }) {
   return (
     <div className=" sm:w-1/3 lg:1/3">
       <Fade
-        direction={reindex % 2 === 0 ? "right" : "left"}
-        fraction="0.25"
+
+       direction='up'
+       duration="1000"
         triggerOnce
         className="flex flex-col justify-center m-auto py-6 sm:py-4 "
       >

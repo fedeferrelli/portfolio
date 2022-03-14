@@ -11,15 +11,19 @@ function App() {
   const [language, setLanguage] = useState("esp");
 
   return (
-    <>
+    <div className="w-fullflex">
+      <div className="m-auto  max-w-screen-xl">
       <NavBar
         setShowNavBar={setShowNavBar}
         showNavBar={showNavBar}
         language={language}
         setLanguage={setLanguage}
+       
       />
 
       <HeroSection language={language} />
+
+      <Projects language={language} />
 
       <div className="bg-gray-100 w-full sm:flex sm:flex-row">
         <About className=" sm:w-1/2" language={language} />
@@ -27,10 +31,10 @@ function App() {
         <Stack className="sm:w-1/2" language={language} />
       </div>
 
-      <Projects language={language} />
-
+  
       <Contact language={language} />
-    </>
+    </div>
+    </div>
   );
 }
 
