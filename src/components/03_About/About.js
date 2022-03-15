@@ -15,7 +15,8 @@ function About({ language }) {
           {language === "esp" ? "Quién Soy" : "About me"}{" "}
         </span>
       </div>
-      <Fade direction="up" duration="1000" triggerOnce className="flex">
+      <Fade direction="up" duration="1250" triggerOnce className="flex flex-col">
+      <Fade className="flex">
         <p className="w-10/12 m-auto mt-4 font-mono leading-loose sm:w-2/3 sm:text-center">
           {language === "esp"
             ? "Apasionado por el desarrollo Front End, disfruto de resolver problemas con"
@@ -56,7 +57,7 @@ function About({ language }) {
 
             </button>
           </a>
-       
+          </Fade>
       </Fade>
     </div>
   );

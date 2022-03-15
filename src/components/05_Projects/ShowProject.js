@@ -20,10 +20,12 @@ function ShowProject({ project, index, language }) {
       <Fade
 
        direction='up'
-       duration="1000"
+       duration="1250"
         triggerOnce
         className="flex flex-col justify-center m-auto py-6 sm:py-4 "
       >
+
+        <Fade>
         <div className="w-10/12  m-auto bg-white rounded border drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)] h-auto  sm:hover:-translate-y-1 duration-300">
           <h1 className="text-center text-2xl sm:text-xl font-bold my-3 flex flex-row justify-center items-center">
             <span className="w-6 h-6 mr-1 rounded-full text-white  bg-purple-800 border text-sm  text-center items-center flex flex-row justify-center">
@@ -89,6 +91,7 @@ function ShowProject({ project, index, language }) {
             </a>
           </div>
         </div>
+        </Fade>
       </Fade>
     </div>
   );

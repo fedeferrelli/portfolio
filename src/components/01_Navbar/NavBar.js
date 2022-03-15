@@ -9,7 +9,7 @@ import FloatingNavBar from "./FloatingNavBar";
 
 function NavBar({ setShowNavBar, showNavBar, language, setLanguage }) {
   return (
-    <div className="bg-transparent
+    <div className="bg-transparent sm:bg-indigo-900
      w-full fixed sm:static z-50">
       <Fade delay="250" triggerOnce>
         <div className="w-full bg-indigo-900 flex flex-row justify-between">
