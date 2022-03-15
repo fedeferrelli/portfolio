@@ -18,8 +18,9 @@ function Stack({language}) {
 
       <div className="flex flex-col justify-center items-center w-full" >
 
-      <Fade direction="up" duration="1000" triggerOnce>
+      <Fade direction="up" duration="1250" triggerOnce>
 
+<Fade>
         <div className="flex flex-wrap justify-center m-auto my-4 sm:w-full">
           {stack.map((stack) => (
             <DisplayStacks
@@ -44,6 +45,7 @@ function Stack({language}) {
             />
           ))}
         </div>
+        </Fade>
         </Fade>
         </div>
       {/* </div> */}

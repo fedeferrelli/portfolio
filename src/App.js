@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="w-fullflex">
-      <div className="m-auto  max-w-screen-xl">
+      <div className="m-auto  max-w-[1300px]">
       <NavBar
         setShowNavBar={setShowNavBar}
         showNavBar={showNavBar}
