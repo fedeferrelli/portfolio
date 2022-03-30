@@ -11,8 +11,8 @@ function App() {
   const [language, setLanguage] = useState("esp");
 
   return (
-    <div className="w-fullflex">
-      <div className="m-auto  max-w-[1300px]">
+    <div className="w-full flex">
+      <div className="m-auto">
       <NavBar
         setShowNavBar={setShowNavBar}
         showNavBar={showNavBar}
