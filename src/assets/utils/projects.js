@@ -19,6 +19,50 @@ const projects = [
   },
 
   {
+    name: "Menu Consumer POV",
+    description_esp:
+      "Esta aplicación permite visualizar y ordenar distintos platos de un menú. Está optimizada para versión mobile y forma parte de un set de aplicaciones para administar menues.",
+    description_eng:
+      "This application allows to view and order different dishes of a menu. It is optimized for mobile version and is part of a set of applications to manage menues.",
+    link: "https://menu-fedeferrelli.vercel.app/",
+    code: "https://github.com/fedeferrelli/menu",
+    image: "menu_consumer",
+    stack: [
+      "React",
+      "Tailwind",
+      "Firebase",
+      "react-dom",
+      "react-fade-in",
+      "react-icons",
+      "react-router-dom",
+      "lodash"
+    ],
+  },
+
+  {
+    name: "Menu Client POV",
+    description_esp:
+      "Esta aplicación permite administrar distintos platos de un menú desde la perspectiva del cliente. Está optimizada para versión mobile y forma parte de un set de aplicaciones para administar menues.",
+    description_eng:
+      "This application allows managing different dishes of a menu from the customer's perspective. It is optimized for mobile version and is part of a set of applications to manage menues",
+    link: "https://menu-cliente-fedeferrelli.vercel.app/",
+    code: "https://github.com/fedeferrelli/menu_cliente",
+    image: "menu_client",
+    stack: [
+      "React",
+      "Tailwind",
+      "Firebase",
+      "react-firebase-file-uploader",
+      "react-router-dom",
+      "react-icons",
+      "lodash",
+      "react-awesome-reveal",
+      "formik",
+      "yup"
+    ],
+  },
+
+  {
     name: "Criptocotizador",
     description_esp:
       "Esta aplicación creada con React Native permite consultar las principales caracterísiticas de las primeras 100 criptomonedas (de acuerdo a su capitalización de mercado).",
