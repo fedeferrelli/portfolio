@@ -44,9 +44,9 @@ function HeroSection({ setShowNavBar, language }) {
               <span className="hidden sm:inline text-5xl font-bold">
                 {language === "esp" ? "Hola, soy" : "Hello, I'm"} &nbsp;
               </span>
-              Fede Ferrelli
+              Fede Mazza
             </h1>
-            <h2 className="text-xl uppercase mt-4">Front end developer</h2>
+            <h2 className="text-xl uppercase mt-4">Front end developer {language === "esp" ? "y Economista" : "and Economist"} </h2>
        <button
                className="mt-8"
             > 

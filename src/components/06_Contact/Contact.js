@@ -26,7 +26,7 @@ function Contact({ language }) {
       >
         <div className="flex flex-row justify-evenly">
           <a
-            href="https://www.linkedin.com/in/fede-ferrelli-75ab00231/"
+            href="https://www.linkedin.com/in/fede-mazza-75ab00231/"
             rel="noreferrer"
             target="_blank"
           >

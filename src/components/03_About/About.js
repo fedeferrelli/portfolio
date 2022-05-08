@@ -1,8 +1,8 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-import Curriculum_esp from "../../assets/CV_Fede_Ferrelli_FED_esp.pdf";
-import Curriculum_eng from "../../assets/CV_Fede_Ferrelli_FED_eng.pdf";
+import Curriculum_esp from "../../assets/CV_Fede_Mazza_FED_esp.pdf";
+import Curriculum_eng from "../../assets/CV_Fede_Mazza_FED_eng.pdf";
 
 function About({ language }) {
   return (
