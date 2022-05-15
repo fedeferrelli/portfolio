@@ -1,5 +1,25 @@
 const projects = [
   {
+    name: "Financial Calculator",
+    description_esp:
+      "Con esta app podés calcular las variables de una operación de crédito típìca: la tasa de interés, el monto a financiar, la cuota a pagar y los periodos de la operación.",
+    description_eng:
+    "This app will allow you to calculate the variables of a typical credit operation: the interest rate, credit's amount, the regular payment and the number of periods.",
+    link: "https://claculadora-fedeferrelli.vercel.app/",
+    code: "https://github.com/fedeferrelli/clac",
+    image: "calculator",
+    stack: [
+      "React",
+      "react-dom",
+      "react-fade-in",
+      "react-router-dom",
+      "react-scroll",
+      "taildwind",
+      "vite"
+    ],
+  },
+
+  {
     name: "To Do List!",
     description_esp:
       "Esta aplicación creada con React permite administrar tareas. Es una manera fácil, divertida y eficiente de ordenar las cosas que tenés para hacer y aumentar la productividad de tu tiempo!",
