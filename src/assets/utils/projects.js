@@ -2,7 +2,7 @@ const projects = [
   {
     name: "Financial Calculator",
     description_esp:
-      "Con esta app podés calcular las variables de una operación de crédito típìca: la tasa de interés, el monto a financiar, la cuota a pagar y los periodos de la operación.",
+      "Con esta app podés calcular las variables de una operación de crédito típica: la tasa de interés, el monto a financiar, la cuota a pagar y los periodos de la operación.",
     description_eng:
     "This app will allow you to calculate the variables of a typical credit operation: the interest rate, credit's amount, the regular payment and the number of periods.",
     link: "https://claculadora-fedeferrelli.vercel.app/",
