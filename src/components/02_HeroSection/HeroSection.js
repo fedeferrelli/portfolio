@@ -10,9 +10,9 @@ function HeroSection({ setShowNavBar, language }) {
     <div
     id="home"
       className="w-full h-screen pt-16 flex flex-col justify-between items-center    
-    bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:flex-col max-w-[1400px]"
+    bg-gradient-to-b from-indigo-900 via-violet-900 to-purple-800 sm:flex-col"
     >
-      <div className="h-full flex flex-col justify-around  w-full  sm:flex-row wiggle">
+      <div className="h-full flex flex-col justify-around  w-full  sm:flex-row wiggle max-w-[1400px]">
         <div className="flex flex-row h-80 w-full m-auto relative sm:w-1/2 ">
           <img
             src={image}

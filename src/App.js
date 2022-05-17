@@ -25,7 +25,7 @@ function App() {
 
       <Projects language={language} />
 
-      <div className="bg-gray-100 w-full sm:flex sm:flex-row">
+      <div className="bg-gray-100 w-full sm:flex sm:flex-row ">
         <About className=" sm:w-1/2" language={language} />
 
         <Stack className="sm:w-1/2" language={language} />
