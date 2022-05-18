@@ -10,6 +10,9 @@ function Stack({language}) {
   return (
     <div id="stack" className="bg-gray-100 pt-12 m-auto pb-8 w-full sm:w-10/12 sm:h-[450px] flex flex-col justify-center sm:justify-start">
 
+
+
+
 <div >
         <div className="text-5xl font-extrabold text-center">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-900 via-purple-800 to-pink-500">
@@ -54,6 +57,7 @@ function Stack({language}) {
       {/* <div className=" h-4 bg-gradient-to-b from-purple-800"></div> */}
     </div>
     </div>
+    
   );
 }
 

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="w-full flex">
-      <div className="m-auto">
+      <div className="m-auto w-full">
       <NavBar
         setShowNavBar={setShowNavBar}
         showNavBar={showNavBar}
@@ -25,10 +25,12 @@ function App() {
 
       <Projects language={language} />
 
-      <div className="bg-gray-100 w-full sm:flex sm:flex-row ">
+      <div className="bg-gray-100 w-full ">
+      <div className="max-w-[1400px]  sm:flex sm:flex-row m-auto">
         <About className=" sm:w-1/2" language={language} />
 
         <Stack className="sm:w-1/2" language={language} />
+      </div>
       </div>
 
   
